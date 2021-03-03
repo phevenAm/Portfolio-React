@@ -1,0 +1,52 @@
+@import "../mainStyles";
+
+.header {
+  // @include frost;
+  flex: 0.3;
+
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+
+  .nav {
+    flex: 0.3;
+    height: fit-content;
+    width: fit-content;
+    padding: $paddingSmall;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--clr-white);
+
+    li {
+      margin-bottom: 30px;
+      position: relative;
+      // transition: width $aniSpeed;
+
+      &::before {
+        content: "";
+        background: var(--clr-red);
+        width: 0;
+        height: 20px;
+        bottom: 0;
+        display: block;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+      }
+
+      &:hover::before {
+        width: 100%;
+        height: 20px;
+      }
+    }
+
+    .link {
+      color: var(--clr-white);
+      font-size: 4.2em;
+      position: relative;
+      // border-bottom: solid white 1px;
+
+      &:visited {
+        color: var(--clr-white);
+      }
+    }
+  }
+}

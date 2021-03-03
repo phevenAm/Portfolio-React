@@ -1,0 +1,57 @@
+@import "../mainStyles";
+
+.home {
+  background-image: url("https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+  // background: rgb(167, 167, 167);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  // background-transform: rotate(90deg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .home__header {
+    font-size: $fontHeading;
+    position: absolute;
+    margin-top: $marginLarge;
+    margin-left: $marginLarge;
+    color: var(--clr-black);
+  }
+  .home_block {
+    @include frost;
+    position: relative;
+    border-radius: $radiusNormal;
+    // transform: translateY(10%);
+    width: 80vw;
+    height: 80vh;
+    flex: 0.6;
+  }
+}
+
+.profile {
+  .profile__image {
+    position: absolute;
+    background: var(--clr-white);
+    height: 60vh;
+    width: 450px;
+    object-fit: contain;
+    left: -100px;
+    border-radius: $radiusNormal;
+
+    transform: translateY(15%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+  }
+
+  .profile__subtitle {
+    font-size: $fontNormal;
+    position: absolute;
+    transform: rotate(90deg);
+    color: var(--clr-white);
+    right: -16rem;
+    bottom: 13rem;
+  }
+}

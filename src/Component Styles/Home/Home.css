@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: serif;
+  height: 100vh;
+  --clr-black: rgb(27, 27, 27);
+  --clr-white: whitesmoke;
+  --clr-red: rgb(192, 57, 57);
+  --clr-grey: rgb(139, 138, 138);
+}
+
+.container {
+  padding: 1.5rem 5.5rem;
+}
+
+.home {
+  background-image: url("https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .home__header {
+  font-size: 4.5rem;
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: var(--clr-black);
+}
+
+.home .home_block {
+  background: rgba(250, 250, 250, 0.26);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.24);
+  position: relative;
+  border-radius: 25px;
+  width: 80vw;
+  height: 80vh;
+  flex: 0.6;
+}
+
+.profile .profile__image {
+  position: absolute;
+  background: var(--clr-white);
+  height: 60vh;
+  width: 450px;
+  object-fit: contain;
+  left: -100px;
+  border-radius: 25px;
+  transform: translateY(15%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+}
+
+.profile .profile__subtitle {
+  font-size: 1.6rem;
+  position: absolute;
+  transform: rotate(90deg);
+  color: var(--clr-white);
+  right: -16rem;
+  bottom: 13rem;
+}
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: serif;
+  height: 100vh;
+  --clr-black: rgb(27, 27, 27);
+  --clr-white: whitesmoke;
+  --clr-red: rgb(192, 57, 57);
+  --clr-grey: rgb(139, 138, 138);
+}
+
+.container {
+  padding: 1.5rem 5.5rem;
+}
+
+.header {
+  flex: 0.3;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+}
+
+.header .nav {
+  flex: 0.3;
+  height: fit-content;
+  width: fit-content;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--clr-white);
+}
+
+.header .nav li {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.header .nav li::before {
+  content: "";
+  background: var(--clr-red);
+  width: 0;
+  height: 20px;
+  bottom: 0;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+
+.header .nav li:hover::before {
+  width: 100%;
+  height: 20px;
+}
+
+.header .nav .link {
+  color: var(--clr-white);
+  font-size: 4.2em;
+  position: relative;
+}
+
+.header .nav .link:visited {
+  color: var(--clr-white);
+}
+/*# sourceMappingURL=Header.css.map */
