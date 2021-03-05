@@ -1,28 +1,31 @@
 import React from "react";
 import ProjectDetails from "../data/projects-data.json";
-
+import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-// import "../Component Styles/Projects/ProjectsPage.css";
+import "../Component Styles/Projects/ProjectsPage.css";
 
 const Projects = () => {
+  const handleDragStart = (e) => e.preventDefault();
+  const items = ProjectDetails.map(({ id, images: { mainImage } }) => {
+    return (
+      <img
+        key={id}
+        src={mainImage}
+        alt="project"
+        className="project__thumbnail"
+        onDragStart={handleDragStart}
+      />
+    );
+  });
+  console.log(items);
+
   return (
-    <div className="projects container">
-      <div className="projects__images">
-        {ProjectDetails.map(
-          ({ id, title, description, images: { mainImage } }) => (
-            <div className="projects__imagesContainer">
-              <img
-                data-title={title}
-                key={id}
-                src={mainImage}
-                alt="main-image"
-                className="projects__imagesThumbnail"
-              />
-              <h2 className="project__title">{title}</h2>
-            </div>
-          )
-        )}
-      </div>
+    <div className="projects">
+      <AliceCarousel
+        mouseTracking
+        items={items}
+        className="projects__carusel"
+      />
     </div>
   );
 };
