@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "title": "Task Tracker",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
+    "images": {
+      "mainImage": "/assets/images/projects/Task Tracker/main.jpg",
+      "firstImage": "/assets/images/projects/Task Tracker/first.jpeg",
+      "secondImage": "/assets/images/projects/Task Tracker/second.jpeg",
+      "thirdImage": "/assets/images/projects/Task Tracker/third.jpeg",
+      "fourthImage": "/assets/images/projects/Task Tracker/fourth.jpeg"
+    },
+    "skills": "HTML, CSS, JS, REACT"
+  },
+  {
+    "id": "2",
+    "title": "Expensify",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
+    "images": {
+      "mainImage": "/assets/images/projects/Task Tracker/main.jpg",
+      "firstImage": "/assets/images/projects/Task Tracker/first.jpeg",
+      "secondImage": "/assets/images/projects/Task Tracker/second.jpeg",
+      "thirdImage": "/assets/images/projects/Task Tracker/third.jpeg",
+      "fourthImage": "/assets/images/projects/Task Tracker/fourth.jpeg"
+    },
+    "skills": "HTML, CSS, JS, REACT"
+  },
+  {
+    "id": "3",
+    "title": "Expensify",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
+    "images": {
+      "mainImage": "/assets/images/projects/Task Tracker/main.jpg",
+      "firstImage": "/assets/images/projects/Task Tracker/first.jpeg",
+      "secondImage": "/assets/images/projects/Task Tracker/second.jpeg",
+      "thirdImage": "/assets/images/projects/Task Tracker/third.jpeg",
+      "fourthImage": "/assets/images/projects/Task Tracker/fourth.jpeg"
+    },
+    "skills": "HTML, CSS, JS, REACT"
+  },
+  {
+    "id": "4",
+    "title": "Expensify",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
+    "images": {
+      "mainImage": "/assets/images/projects/Task Tracker/main.jpg",
+      "firstImage": "/assets/images/projects/Task Tracker/first.jpeg",
+      "secondImage": "/assets/images/projects/Task Tracker/second.jpeg",
+      "thirdImage": "/assets/images/projects/Task Tracker/third.jpeg",
+      "fourthImage": "/assets/images/projects/Task Tracker/fourth.jpeg"
+    },
+    "skills": "HTML, CSS, JS, REACT"
+  },
+  {
+    "id": "5",
+    "title": "Expensify",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
+    "images": {
+      "mainImage": "/assets/images/projects/Task Tracker/main.jpg",
+      "firstImage": "/assets/images/projects/Task Tracker/first.jpeg",
+      "secondImage": "/assets/images/projects/Task Tracker/second.jpeg",
+      "thirdImage": "/assets/images/projects/Task Tracker/third.jpeg",
+      "fourthImage": "/assets/images/projects/Task Tracker/fourth.jpeg"
+    },
+    "skills": "HTML, CSS, JS, REACT"
+  }
+]
