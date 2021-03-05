@@ -57,6 +57,10 @@ html {
   flex-direction: row-reverse;
 }
 
+.projects .projects__images .projects__imagesContainer:nth-of-type(odd) img {
+  transform: translateX(8rem);
+}
+
 .projects .projects__images .projects__imagesContainer:first-of-type {
   display: flex;
   justify-content: space-evenly;

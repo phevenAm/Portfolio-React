@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectDetails from "../data/projects-data.json";
-import "../Component Styles/Projects/ProjectsPage.css";
+
+import "react-alice-carousel/lib/alice-carousel.css";
+// import "../Component Styles/Projects/ProjectsPage.css";
 
 const Projects = () => {
   return (

@@ -29,6 +29,10 @@
 
     .projects__imagesContainer:nth-of-type(odd) {
       flex-direction: row-reverse;
+
+      img {
+        transform: translateX(8rem);
+      }
     }
 
     .projects__imagesContainer:first-of-type {

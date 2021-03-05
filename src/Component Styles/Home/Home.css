@@ -50,7 +50,8 @@ html {
   position: relative;
   border-radius: 25px;
   width: 80vw;
-  height: 750px;
+  min-height: 750px;
+  height: 80vh;
   flex: 0.6;
 }
 
@@ -62,6 +63,7 @@ html {
   object-fit: contain;
   left: -100px;
   border-radius: 25px;
+  background: red;
   transform: translateY(15%);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
 }
