@@ -20,6 +20,7 @@
     margin-top: $marginLarge;
     margin-left: $marginLarge;
     color: var(--clr-black);
+    top: -0.5rem;
   }
   .home_block {
     @include frost;
@@ -27,7 +28,7 @@
     border-radius: $radiusNormal;
     // transform: translateY(10%);
     width: 80vw;
-    height: 80vh;
+    height: 750px;
     flex: 0.6;
   }
 }

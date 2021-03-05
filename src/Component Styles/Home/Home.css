@@ -40,6 +40,7 @@ html {
   margin-top: 2rem;
   margin-left: 2rem;
   color: var(--clr-black);
+  top: -0.5rem;
 }
 
 .home .home_block {
@@ -49,7 +50,7 @@ html {
   position: relative;
   border-radius: 25px;
   width: 80vw;
-  height: 80vh;
+  height: 750px;
   flex: 0.6;
 }
 
