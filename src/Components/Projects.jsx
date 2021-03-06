@@ -7,11 +7,12 @@ import Slider from "react-slick";
 
 export default function SimpleSlider() {
   const settings = {
-    dots: true,
+    className: "center",
+    centerMode: true,
     infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
   };
 
   return (
@@ -20,6 +21,7 @@ export default function SimpleSlider() {
         return (
           <img
             key={id}
+            width="100%"
             src={mainImage}
             alt="project"
             className="project__thumbnail"
