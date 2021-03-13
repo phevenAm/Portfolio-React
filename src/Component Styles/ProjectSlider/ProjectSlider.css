@@ -72,7 +72,7 @@ html {
   color: var(--clr-white);
 }
 
-.project__slide .project__slideElementContent .project__slideElementContentText p {
+.project__slide .project__slideElementContent p {
   font-size: 1.6rem;
 }
 /*# sourceMappingURL=ProjectSlider.css.map */
