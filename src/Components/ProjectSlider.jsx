@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ProjectDetails from "../data/projects-data.json";
-
 // react-id-swiper
-// import "swiper/css/swiper.css";
+import "swiper/css/swiper.css";
 import Swiper from "react-id-swiper";
+//customs css
 
-// Import Swiper styles
-// import "swiper/css/swiper.css";
-
+import "../Component Styles/ProjectSlider/ProjectSlider.css";
 const HeroSliderConfigs = {
   containerClass: "swiper-container hero-slider",
   parallax: true,
@@ -23,7 +21,7 @@ const ProjectSlider = () => {
   const parallaxAmount = parallaxSwiper ? parallaxSwiper.width * 0.95 : 0;
   const parallaxOpacity = 0.5;
   return (
-    <div>
+    <Swiper {...HeroSliderConfigs} getSwiper={setParallaxSwiper}>
       {ProjectDetails.map((project) => {
         const {
           id,
@@ -40,16 +38,25 @@ const ProjectSlider = () => {
         } = project;
 
         return (
-          <Swiper
-            key={project.id}
-            {...HeroSliderConfigs}
-            getSwiper={setParallaxSwiper}
-          >
-            hi
-          </Swiper>
+          <div className="project__slide">
+            <div
+              key={project.id}
+              className="project__slideElement"
+              data-swiper-parallax={parallaxAmount}
+              data-swiper-parallax-opacity={parallaxOpacity}
+              style={{ backgroundImage: `url(${mainImage})` }}
+            >
+              {/* <img
+                src={mainImage}
+                alt="project"
+                className="project__slideElementImage"
+              /> */}
+            </div>
+            ;
+          </div>
         );
       })}
-    </div>
+    </Swiper>
   );
 };
 

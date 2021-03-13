@@ -1,15 +1,10 @@
 import React, { useEffect } from "react";
-
 import ProjectSlider from "./ProjectSlider";
-// Import Swiper styles
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/scrollbar/scrollbar.scss";
+import "../Component Styles/Projects/ProjectsPage.css";
 
 const Projects = () => {
   return (
-    <div className="products">
+    <div className="projects">
       <ProjectSlider />
     </div>
   );
