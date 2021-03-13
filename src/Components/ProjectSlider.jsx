@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ProjectDetails from "../data/projects-data.json";
 // react-id-swiper
 import "swiper/css/swiper.css";
@@ -6,22 +7,26 @@ import Swiper from "react-id-swiper";
 //customs css
 
 import "../Component Styles/ProjectSlider/ProjectSlider.css";
-const HeroSliderConfigs = {
-  containerClass: "swiper-container hero-slider",
-  parallax: true,
-  centeredSlides: true,
-  grabCursor: true,
-  speed: 500,
-  spaceBetween: 0,
-  effect: "slide",
-};
 
 const ProjectSlider = () => {
-  const [parallaxSwiper, setParallaxSwiper] = useState(null);
-  const parallaxAmount = parallaxSwiper ? parallaxSwiper.width * 0.95 : 0;
-  const parallaxOpacity = 0.5;
+  const params = {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  };
   return (
-    <Swiper {...HeroSliderConfigs} getSwiper={setParallaxSwiper}>
+    <Swiper {...params}>
       {ProjectDetails.map((project) => {
         const {
           id,
@@ -38,21 +43,17 @@ const ProjectSlider = () => {
         } = project;
 
         return (
-          <div className="project__slide">
-            <div
-              key={project.id}
-              className="project__slideElement"
-              data-swiper-parallax={parallaxAmount}
-              data-swiper-parallax-opacity={parallaxOpacity}
-              style={{ backgroundImage: `url(${mainImage})` }}
-            >
-              {/* <img
-                src={mainImage}
-                alt="project"
-                className="project__slideElementImage"
-              /> */}
+          <div
+            className="project__slide"
+            onClick={() => console.log("use history APi to change page")}
+            style={{ backgroundImage: `url(${mainImage})` }}
+          >
+            {/* <div className="project__slideElement"> */}
+            <div className="project__slideElementContent">
+              <h1>{title}</h1>
+              {description}
             </div>
-            ;
+            {/* </div> */}
           </div>
         );
       })}
