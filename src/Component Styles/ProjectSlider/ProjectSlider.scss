@@ -1,32 +1,57 @@
+@import "../mainStyles";
+
 .project__slide {
   height: 65vh;
-  width: 100vw;
+  width: 80rem;
   display: flex;
   position: relative;
-  background: rgb(88, 46, 46);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  justify-content: space-around;
-  align-items: center;
+  border-radius: $radiusNormal;
+  @include frost;
+  margin: $marginSmall;
   min-height: 50vh !important;
 
   .project__slideElementContent {
     display: flex;
-    flex-direction: column;
+    padding: $paddingXLarge;
+    user-select: none;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: absolute;
     z-index: 500;
-    background: rgba(226, 221, 221, 0.13);
+
     width: 100%;
     height: 100%;
 
-    h1 {
-      font-size: 5rem;
-      color: black;
-      margin-bottom: 0;
+    img {
+      box-shadow: $shadow;
+      border-radius: $radiusSmall;
+      max-width: 50% !important;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project__slideElementContentText {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-left: $marginLarge;
+      position: relative;
+      //   background: red;
+      height: 100%;
+
+      h1 {
+        text-align: left;
+        font-size: 5.5rem;
+        left: -35%;
+        transform: rotate(90deg) translate(5%, 210%);
+
+        color: var(--clr-white);
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
     }
   }
 }
