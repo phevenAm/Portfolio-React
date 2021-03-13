@@ -1,23 +1,36 @@
 [
   {
-    "id": "1",
-    "title": "Task Tracker",
+    "id": "0",
+    "title": "Microsoft",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
     "images": {
-      "mainImage": "/assets/images/projects/Task Tracker/main.jpg",
-      "firstImage": "/assets/images/projects/Task Tracker/first.jpeg",
-      "secondImage": "/assets/images/projects/Task Tracker/second.jpeg",
-      "thirdImage": "/assets/images/projects/Task Tracker/third.jpeg",
-      "fourthImage": "/assets/images/projects/Task Tracker/fourth.jpeg"
+      "mainImage": "/assets/images/projects/MS_clone/main.jpeg",
+      "firstImage": "/assets/images/projects/MS_clone/first.jpeg",
+      "secondImage": "/assets/images/projects/MS_clone/second.jpeg",
+      "thirdImage": "/assets/images/projects/MS_clone/third.jpeg",
+      "fourthImage": "/assets/images/projects/MS_clone/fourth.jpeg"
+    },
+    "skills": "HTML, CSS, JS, REACT"
+  },
+  {
+    "id": "1",
+    "title": "Evergreen",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
+    "images": {
+      "mainImage": "/assets/images/projects/EverGreen/main.jpeg",
+      "firstImage": "/assets/images/projects/EverGreen/first.jpeg",
+      "secondImage": "/assets/images/projects/EverGreen/second.jpeg",
+      "thirdImage": "/assets/images/projects/EverGreen/third.jpeg",
+      "fourthImage": "/assets/images/projects/EverGreen/fourth.jpeg"
     },
     "skills": "HTML, CSS, JS, REACT"
   },
   {
     "id": "2",
-    "title": "Linked",
+    "title": "LinkedIn",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
     "images": {
-      "mainImage": "/assets/images/projects/LinkedIn/main.jpg",
+      "mainImage": "/assets/images/projects/LinkedIn/main.jpeg",
       "firstImage": "/assets/images/projects/LinkedIn/first.jpeg",
       "secondImage": "/assets/images/projects/LinkedIn/second.jpeg",
       "thirdImage": "/assets/images/projects/LinkedIn/third.jpeg",
@@ -27,23 +40,23 @@
   },
   {
     "id": "3",
-    "title": "Expensify",
+    "title": "Indecision",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
     "images": {
-      "mainImage": "/assets/images/projects/expensity/main.jpg",
-      "firstImage": "/assets/images/projects/expensity/first.jpeg",
-      "secondImage": "/assets/images/projects/expensity/second.jpeg",
-      "thirdImage": "/assets/images/projects/expensity/third.jpeg",
-      "fourthImage": "/assets/images/projects/expensity/fourth.jpeg"
+      "mainImage": "/assets/images/projects/Indecision/main.jpeg",
+      "firstImage": "/assets/images/projects/Indecision/first.jpeg",
+      "secondImage": "/assets/images/projects/Indecision/second.jpeg",
+      "thirdImage": "/assets/images/projects/Indecision/third.jpeg",
+      "fourthImage": "/assets/images/projects/Indecision/fourth.jpeg"
     },
     "skills": "HTML, CSS, JS, REACT"
   },
   {
     "id": "4",
-    "title": "Expensify",
+    "title": "Youtube",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
     "images": {
-      "mainImage": "/assets/images/projects/youtube-player/main.jpg",
+      "mainImage": "/assets/images/projects/youtube-player/main.jpeg",
       "firstImage": "/assets/images/projects/youtube-player/first.jpeg",
       "secondImage": "/assets/images/projects/youtube-player/second.jpeg",
       "thirdImage": "/assets/images/projects/youtube-player/third.jpeg",
@@ -53,10 +66,23 @@
   },
   {
     "id": "5",
-    "title": "Expensify",
+    "title": "Task Tracker",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
     "images": {
-      "mainImage": "/assets/images/projects/Task Tracker/main.jpg",
+      "mainImage": "/assets/images/projects/Task_Tracker/main.jpeg",
+      "firstImage": "/assets/images/projects/Task_Tracker/first.jpeg",
+      "secondImage": "/assets/images/projects/Task_Tracker/second.jpeg",
+      "thirdImage": "/assets/images/projects/Task_Tracker/third.jpeg",
+      "fourthImage": "/assets/images/projects/Task_Tracker/fourth.jpeg"
+    },
+    "skills": "HTML, CSS, JS, REACT"
+  },
+  {
+    "id": "6",
+    "title": "Baus",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum obcaecati modi reprehenderit vel distinctio, cumque iste mollitia minus repudiandae?",
+    "images": {
+      "mainImage": "/assets/images/projects/baus/main.jpeg",
       "firstImage": "/assets/images/projects/Task Tracker/first.jpeg",
       "secondImage": "/assets/images/projects/Task Tracker/second.jpeg",
       "thirdImage": "/assets/images/projects/Task Tracker/third.jpeg",

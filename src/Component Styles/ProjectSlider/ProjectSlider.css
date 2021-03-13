@@ -32,6 +32,7 @@ html {
   box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.24);
   margin: 1rem;
   min-height: 50vh !important;
+  cursor: pointer;
 }
 
 .project__slide .project__slideElementContent {
@@ -64,12 +65,33 @@ html {
   height: 100%;
 }
 
-.project__slide .project__slideElementContent .project__slideElementContentText h1 {
-  text-align: left;
+.project__slide .project__slideElementContent h1 {
+  position: relative;
+  top: 25%;
   font-size: 5.5rem;
-  left: -35%;
-  transform: rotate(90deg) translate(5%, 210%);
   color: var(--clr-white);
+  margin-bottom: 3.5rem;
+}
+
+.project__slide .project__slideElementContent h1::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1rem;
+  bottom: 0;
+  left: 0;
+  background: white;
+  transition: all ease-in-out 0.25s;
+}
+
+.project__slide .project__slideElementContent h1:hover::after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 1rem;
+  bottom: 0;
+  left: 0;
+  background: var(--clr-white);
 }
 
 .project__slide .project__slideElementContent p {

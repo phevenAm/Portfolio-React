@@ -9,6 +9,7 @@
   @include frost;
   margin: $marginSmall;
   min-height: 50vh !important;
+  cursor: pointer;
 
   .project__slideElementContent {
     display: flex;
@@ -19,14 +20,13 @@
     justify-content: space-between;
     position: absolute;
     z-index: 500;
-
     width: 100%;
     height: 100%;
 
     img {
       box-shadow: $shadow;
       border-radius: $radiusSmall;
-      max-width: 50% !important;
+      max-width: 50% !important; // max-width: 400px !important;
       height: 100%;
       object-fit: cover;
     }
@@ -37,15 +37,36 @@
       justify-content: space-evenly;
       margin-left: $marginLarge;
       position: relative;
-      //   background: red;
+      // background: red;
       height: 100%;
+    }
 
-      h1 {
-        text-align: left;
-        font-size: 5.5rem;
-        left: -35%;
-        transform: rotate(90deg) translate(5%, 210%);
-        color: var(--clr-white);
+    h1 {
+      position: relative;
+      top: 25%;
+      font-size: 5.5rem;
+      color: var(--clr-white);
+      margin-bottom: $marginXLarge;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1rem;
+        bottom: 0;
+        left: 0;
+        background: white;
+        transition: all ease-in-out 0.25s;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        width: 85%;
+        height: 1rem;
+        bottom: 0;
+        left: 0;
+        background: var(--clr-white);
       }
     }
 
