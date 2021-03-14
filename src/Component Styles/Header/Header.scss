@@ -41,11 +41,14 @@
 .rodal {
   .rodal-dialog {
     @include frost;
+    background: var(--clr-black);
+    opacity: 0.8;
     border-radius: $radiusNormal;
 
     h3 {
       color: var(--clr-white);
       margin-bottom: $marginSmall;
+      font-size: 3rem;
     }
     .rodal__info {
       display: flex;

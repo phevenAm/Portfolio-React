@@ -12,8 +12,8 @@ const Header = () => {
     setModalState(!modalState);
   };
   const props = {
-    animation: "slideDown",
-    width: 400,
+    animation: "door",
+    width: 280,
     height: 150,
   };
   return (

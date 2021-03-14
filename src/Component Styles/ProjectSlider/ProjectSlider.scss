@@ -14,7 +14,6 @@
   .project__slideElementContent {
     display: flex;
     padding: $paddingXLarge;
-    user-select: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +26,7 @@
       box-shadow: $shadow;
       border-radius: $radiusSmall;
       min-width: 50%;
-      max-width: 50% !important; // max-width: 400px !important;
+      max-width: 50% !important;
       height: 100%;
       object-fit: cover;
     }
@@ -38,7 +37,7 @@
       justify-content: space-evenly;
       margin-left: $marginLarge;
       position: relative;
-      // background: red;
+
       height: 100%;
     }
 

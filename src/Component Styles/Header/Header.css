@@ -82,12 +82,15 @@ body {
   background: rgba(250, 250, 250, 0.26);
   backdrop-filter: blur(8px);
   box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.24);
+  background: var(--clr-black);
+  opacity: 0.8;
   border-radius: 25px;
 }
 
 .rodal .rodal-dialog h3 {
   color: var(--clr-white);
   margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .rodal .rodal-dialog .rodal__info {
