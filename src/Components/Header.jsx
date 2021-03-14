@@ -12,11 +12,11 @@ const Header = () => {
             Projects
           </NavLink>
         </li>
-        {/* <li>
+        <li>
           <NavLink to="/Contact" activeClassName="is-active" className="link">
             Contact
           </NavLink>
-        </li> */}
+        </li>
       </div>
     </div>
   );
