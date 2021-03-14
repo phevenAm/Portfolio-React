@@ -15,7 +15,8 @@
     "react-scripts": "4.0.3",
     "rodal": "^1.8.1",
     "swiper": "5.3.8",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",
