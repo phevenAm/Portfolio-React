@@ -1,4 +1,5 @@
 import React from "react";
+import Rodal from "rodal";
 import { NavLink } from "react-router-dom";
 import "../Component Styles/Header/Header.css";
 
