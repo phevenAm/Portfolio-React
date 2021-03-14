@@ -68,9 +68,60 @@ body {
   color: var(--clr-white);
   font-size: 4.2em;
   position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .header .nav .link:visited {
+  color: var(--clr-white);
+}
+
+.rodal .rodal-dialog {
+  background: rgba(250, 250, 250, 0.26);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.24);
+  border-radius: 25px;
+}
+
+.rodal .rodal-dialog h3 {
+  color: var(--clr-white);
+  margin-bottom: 1rem;
+}
+
+.rodal .rodal-dialog .rodal__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rodal .rodal-dialog .rodal__info span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  margin-right: 3.5rem;
+}
+
+.rodal .rodal-dialog .rodal__info span::before {
+  content: "";
+  background: var(--clr-red);
+  width: 0;
+  height: 20px;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+
+.rodal .rodal-dialog .rodal__info span:hover::before {
+  width: 100%;
+  height: 20px;
+}
+
+.rodal .rodal-dialog .rodal__info span a {
+  font-size: 2rem;
   color: var(--clr-white);
 }
 /*# sourceMappingURL=Header.css.map */
