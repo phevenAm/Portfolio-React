@@ -13,6 +13,8 @@ const Header = () => {
   };
   const props = {
     animation: "slideDown",
+    width: 400,
+    height: 190,
   };
   return (
     <div className="header">
@@ -27,15 +29,21 @@ const Header = () => {
             Contact
             <Rodal visible={modalState} onClose={toggleState} {...props}>
               <h3>Get in touch</h3>
-              <span>
-                <BiGitBranch /> <a href="">GitHub</a>
-              </span>
-              <span>
-                <AiFillLinkedin /> <a href="">LinkedIn</a>
-              </span>
-              <span>
-                <BiPhone /> <a href="">Mobile</a>
-              </span>
+              <div className="rodal__info">
+                <span>
+                  <BiGitBranch />
+                  <a href="https://github.com/smissah">GitHub</a>
+                </span>
+                <span>
+                  <AiFillLinkedin />
+                  <a href="https://www.linkedin.com/in/stephenmissah/">
+                    LinkedIn
+                  </a>
+                </span>
+                <span>
+                  <BiPhone /> <a href="tel:+447790006473">Mobile</a>
+                </span>
+              </div>
             </Rodal>
           </NavLink>
         </li>
