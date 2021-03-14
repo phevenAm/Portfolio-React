@@ -13,8 +13,12 @@ html {
   height: 100vh;
   --clr-black: rgb(27, 27, 27);
   --clr-white: whitesmoke;
-  --clr-red: rgb(192, 57, 57);
+  --clr-red: rgb(212, 88, 88);
   --clr-grey: rgb(139, 138, 138);
+}
+
+body {
+  background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .container {
@@ -22,7 +26,6 @@ html {
 }
 
 .home {
-  background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
