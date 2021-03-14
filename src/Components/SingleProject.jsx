@@ -8,11 +8,54 @@ const SingleProject = ({ match }) => {
     const project = projectsData.filter((project) => {
       return project.title === match.params.title;
     });
-    console.log(project);
+
     setSingleProject(project);
   }, []);
   console.log(singleProject);
-  return <div className="singleProject">item</div>;
+  const [{ description, id, images, skills, title } = {}] = singleProject;
+  console.log(images);
+  return (
+    <div className="project">
+      <div className="project__hero">
+        <h1>{title}</h1>
+        <img
+          src={
+            images
+              ? images.secondImage
+              : "https://designshack.net/wp-content/uploads/placeholder-image.png"
+          }
+          alt="project image"
+        />
+      </div>
+
+      <div className="project__images">
+        <img
+          src={
+            images
+              ? images.secondImage
+              : "https://designshack.net/wp-content/uploads/placeholder-image.png"
+          }
+          alt="project image"
+        />
+        <img
+          src={
+            images
+              ? images.secondImage
+              : "https://designshack.net/wp-content/uploads/placeholder-image.png"
+          }
+          alt="project image"
+        />
+        <img
+          src={
+            images
+              ? images.secondImage
+              : "https://designshack.net/wp-content/uploads/placeholder-image.png"
+          }
+          alt="project image"
+        />
+      </div>
+    </div>
+  );
 };
 
 export default SingleProject;
