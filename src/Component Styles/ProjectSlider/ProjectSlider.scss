@@ -48,27 +48,7 @@
       font-size: 5.5rem;
       color: var(--clr-white);
       margin-bottom: $marginXLarge;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 1rem;
-        bottom: 0;
-        left: 0;
-        background: white;
-        transition: all ease-in-out 0.25s;
-      }
-
-      &:hover::after {
-        content: "";
-        position: absolute;
-        width: 85%;
-        height: 1rem;
-        bottom: 0;
-        left: 0;
-        background: var(--clr-white);
-      }
+      @include linkHoverAnimation;
     }
 
     p {

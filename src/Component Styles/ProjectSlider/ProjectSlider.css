@@ -80,25 +80,21 @@ body {
   margin-bottom: 3.5rem;
 }
 
-.project__slide .project__slideElementContent h1::after {
+.project__slide .project__slideElementContent h1::before {
   content: "";
-  position: absolute;
-  width: 0%;
-  height: 1rem;
+  background: var(--clr-red);
+  width: 0;
+  height: 20px;
   bottom: 0;
-  left: 0;
-  background: white;
-  transition: all ease-in-out 0.25s;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  z-index: -2;
 }
 
-.project__slide .project__slideElementContent h1:hover::after {
-  content: "";
-  position: absolute;
-  width: 85%;
-  height: 1rem;
-  bottom: 0;
-  left: 0;
-  background: var(--clr-white);
+.project__slide .project__slideElementContent h1:hover::before {
+  width: 80%;
+  height: 20px;
 }
 
 .project__slide .project__slideElementContent p {

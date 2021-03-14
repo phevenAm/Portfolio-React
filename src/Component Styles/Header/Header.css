@@ -48,7 +48,15 @@ body {
   position: relative;
 }
 
-.header .nav li::before {
+.header .nav .link {
+  color: var(--clr-white);
+  font-size: 4.2em;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header .nav .link::before {
   content: "";
   background: var(--clr-red);
   width: 0;
@@ -57,19 +65,12 @@ body {
   display: block;
   transition: all 0.5s ease-in-out;
   position: absolute;
+  z-index: -2;
 }
 
-.header .nav li:hover::before {
-  width: 100%;
+.header .nav .link:hover::before {
+  width: 80%;
   height: 20px;
-}
-
-.header .nav .link {
-  color: var(--clr-white);
-  font-size: 4.2em;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
 }
 
 .header .nav .link:visited {
