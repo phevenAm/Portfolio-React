@@ -68,6 +68,8 @@ body {
   color: var(--clr-white);
   font-size: 4.2em;
   position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .header .nav .link:visited {

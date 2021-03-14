@@ -42,7 +42,9 @@
       color: var(--clr-white);
       font-size: 4.2em;
       position: relative;
-      // border-bottom: solid white 1px;
+
+      cursor: pointer;
+      user-select: none;
 
       &:visited {
         color: var(--clr-white);

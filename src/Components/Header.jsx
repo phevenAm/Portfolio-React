@@ -25,7 +25,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" className="link" onClick={toggleState}>
+          <div className="link" onClick={toggleState}>
             Contact
             <Rodal visible={modalState} onClose={toggleState} {...props}>
               <h3>Get in touch</h3>
@@ -49,7 +49,7 @@ const Header = () => {
                 </span>
               </div>
             </Rodal>
-          </NavLink>
+          </div>
         </li>
       </div>
     </div>
