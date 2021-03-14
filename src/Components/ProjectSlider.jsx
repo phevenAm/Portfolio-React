@@ -47,16 +47,16 @@ const ProjectSlider = () => {
             key={id}
             className="project__slide"
             onClick={() => console.log("use history APi to change page")}
-            // style={{ backgroundImage: `url(${mainImage})` }}
           >
-            <div className="project__slideElementContent">
-              <img src={mainImage} alt={title} />
-              <div className="project__slideElementContentText">
-                <h1>{title}</h1>
-                <p> {description}</p>
+            <Link to={`/Projects/Single_Project/${title}`}>
+              <div className="project__slideElementContent">
+                <img src={mainImage} alt={title} />
+                <div className="project__slideElementContentText">
+                  <h1>{title}</h1>
+                  <p> {description}</p>
+                </div>
               </div>
-            </div>
-            {/* </div> */}
+            </Link>
           </div>
         );
       })}
