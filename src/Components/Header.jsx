@@ -31,13 +31,16 @@ const Header = () => {
               <h3>Get in touch</h3>
               <div className="rodal__info">
                 <span>
-                  <a href="https://github.com/smissah">
+                  <a href="https://github.com/smissah" target="_blank">
                     <BiGitBranch /> {""}
                     GitHub
                   </a>
                 </span>
                 <span>
-                  <a href="https://www.linkedin.com/in/stephenmissah/">
+                  <a
+                    href="https://www.linkedin.com/in/stephenmissah/"
+                    target="_blank"
+                  >
                     <AiFillLinkedin /> {""}
                     LinkedIn
                   </a>
