@@ -1,30 +1,39 @@
 @import "../mainStyles";
-body {
-  background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-}
 
 .project {
   width: 80vw;
   margin: auto;
   height: fit-content;
-  // height: ;
+  border-radius: $radiusNormal;
+  padding: $paddingXXLarge;
+
   object-fit: contain;
-  padding: $paddingLarge;
+  transform: translateY(15%);
   @include frost;
 
   .project__hero {
     padding: $paddingLarge;
     width: 100%;
     height: 40rem;
-    background: rgb(160, 160, 161);
+    background: none;
     display: grid;
     place-items: center;
     position: relative;
 
-    margin-bottom: $marginLarge;
-    img {
+    margin-bottom: $marginXXLarge;
+
+    h1 {
+      font-size: 10rem;
       position: absolute;
-      width: 80%;
+      z-index: 3;
+      color: var(--clr-white);
+      user-select: none;
+      text-transform: uppercase;
+    }
+    img {
+      border-radius: $radiusSmall;
+      position: absolute;
+      width: 100%;
       height: 100%;
       object-fit: cover;
       margin: auto;
@@ -36,6 +45,8 @@ body {
     justify-content: space-evenly;
 
     img {
+      border-radius: $radiusSmall;
+
       display: flex;
       width: 25%;
     }

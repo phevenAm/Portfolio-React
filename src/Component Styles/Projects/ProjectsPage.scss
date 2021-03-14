@@ -15,31 +15,13 @@
 
 .projects__backButton {
   position: absolute;
-  font-size: 5rem;
-  top: 17.5rem;
+  font-size: 5.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   left: 2rem;
   color: white;
 
-  &::after {
-    content: "";
-    height: 1.5rem;
-    background: var(--clr-red);
-    bottom: 1.5rem;
-    width: 10%;
-    position: absolute;
-    display: block;
-    z-index: -2;
-    // transition: all 1s ease-in-out;
+  &:hover {
+    color: var(--clr-red);
   }
-
-  // &:hover::after {
-  //   content: "";
-  //   height: 1.5rem;
-  //   background: var(--clr-red);
-  //   bottom: 1.5rem;
-  //   width: 50%;
-  //   position: absolute;
-  //   display: block;
-  //   z-index: -2;
-  // }
 }

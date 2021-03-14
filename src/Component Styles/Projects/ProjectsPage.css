@@ -13,7 +13,7 @@ html {
   height: 100vh;
   --clr-black: rgb(27, 27, 27);
   --clr-white: whitesmoke;
-  --clr-red: rgb(192, 57, 57);
+  --clr-red: rgb(212, 88, 88);
   --clr-grey: rgb(139, 138, 138);
 }
 
@@ -37,20 +37,14 @@ body {
 
 .projects__backButton {
   position: absolute;
-  font-size: 5rem;
-  top: 17.5rem;
+  font-size: 5.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   left: 2rem;
   color: white;
 }
 
-.projects__backButton::after {
-  content: "";
-  height: 1.5rem;
-  background: var(--clr-red);
-  bottom: 1.5rem;
-  width: 10%;
-  position: absolute;
-  display: block;
-  z-index: -2;
+.projects__backButton:hover {
+  color: var(--clr-red);
 }
 /*# sourceMappingURL=ProjectsPage.css.map */

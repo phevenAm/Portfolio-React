@@ -14,7 +14,7 @@ html {
   height: 100vh;
   --clr-black: rgb(27, 27, 27);
   --clr-white: whitesmoke;
-  --clr-red: rgb(192, 57, 57);
+  --clr-red: rgb(212, 88, 88);
   --clr-grey: rgb(139, 138, 138);
 }
 
@@ -49,6 +49,7 @@ $paddingSmall: 1rem;
 $paddingMedium: 1.5rem;
 $paddingLarge: 2rem;
 $paddingXLarge: 2.5rem;
+$paddingXXLarge: 5rem;
 
 //!Mixins
 @mixin frost {
