@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Rodal from "rodal";
-import { BiGitBranch, BiPhone, BiMailSend } from "react-icons/bi";
+import { BiGitBranch, BiPhone } from "react-icons/bi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import "../Component Styles/Header/Header.css";
@@ -31,7 +31,11 @@ const Header = () => {
               <h3>Get in touch</h3>
               <div className="rodal__info">
                 <span>
-                  <a href="https://github.com/smissah" target="_blank">
+                  <a
+                    href="https://github.com/smissah"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BiGitBranch /> {""}
                     GitHub
                   </a>
@@ -40,6 +44,7 @@ const Header = () => {
                   <a
                     href="https://www.linkedin.com/in/stephenmissah/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <AiFillLinkedin /> {""}
                     LinkedIn

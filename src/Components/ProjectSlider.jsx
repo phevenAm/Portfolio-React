@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import ProjectDetails from "../data/projects-data.json";
 // react-id-swiper
@@ -32,13 +32,7 @@ const ProjectSlider = () => {
           id,
           title,
           description,
-          images: {
-            mainImage,
-            firstImage,
-            secondImage,
-            thirdImage,
-            fourthImage,
-          },
+          images: { mainImage },
           skills,
         } = project;
 

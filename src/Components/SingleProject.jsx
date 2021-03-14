@@ -31,7 +31,7 @@ const SingleProject = ({ match }) => {
                 ? images.secondImage
                 : "https://designshack.net/wp-content/uploads/placeholder-image.png"
             }
-            alt="project image"
+            alt={title}
           />
         </div>
 
@@ -42,7 +42,7 @@ const SingleProject = ({ match }) => {
                 ? images.secondImage
                 : "https://designshack.net/wp-content/uploads/placeholder-image.png"
             }
-            alt="project image"
+            alt={title}
           />
           <img
             src={
@@ -50,7 +50,7 @@ const SingleProject = ({ match }) => {
                 ? images.secondImage
                 : "https://designshack.net/wp-content/uploads/placeholder-image.png"
             }
-            alt="project image"
+            alt={title}
           />
           <img
             src={
@@ -58,7 +58,7 @@ const SingleProject = ({ match }) => {
                 ? images.secondImage
                 : "https://designshack.net/wp-content/uploads/placeholder-image.png"
             }
-            alt="project image"
+            alt={title}
           />
         </div>
       </div>
