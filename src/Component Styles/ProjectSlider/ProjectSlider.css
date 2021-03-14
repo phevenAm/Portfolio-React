@@ -102,5 +102,6 @@ body {
 
 .project__slide .project__slideElementContent p {
   font-size: 1.6rem;
+  color: var(--clr-black);
 }
 /*# sourceMappingURL=ProjectSlider.css.map */
