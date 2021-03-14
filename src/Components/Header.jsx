@@ -14,7 +14,7 @@ const Header = () => {
   const props = {
     animation: "slideDown",
     width: 400,
-    height: 190,
+    height: 150,
   };
   return (
     <div className="header">
@@ -31,17 +31,21 @@ const Header = () => {
               <h3>Get in touch</h3>
               <div className="rodal__info">
                 <span>
-                  <BiGitBranch />
-                  <a href="https://github.com/smissah">GitHub</a>
+                  <a href="https://github.com/smissah">
+                    <BiGitBranch /> {""}
+                    GitHub
+                  </a>
                 </span>
                 <span>
-                  <AiFillLinkedin />
                   <a href="https://www.linkedin.com/in/stephenmissah/">
+                    <AiFillLinkedin /> {""}
                     LinkedIn
                   </a>
                 </span>
                 <span>
-                  <BiPhone /> <a href="tel:+447790006473">Mobile</a>
+                  <a href="tel:+447790006473">
+                    <BiPhone /> {""} Mobile
+                  </a>
                 </span>
               </div>
             </Rodal>

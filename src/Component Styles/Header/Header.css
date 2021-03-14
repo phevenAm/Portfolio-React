@@ -83,7 +83,7 @@ body {
 
 .rodal .rodal-dialog h3 {
   color: var(--clr-white);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .rodal .rodal-dialog .rodal__info {
@@ -119,7 +119,7 @@ body {
 }
 
 .rodal .rodal-dialog .rodal__info span a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--clr-white);
 }
 /*# sourceMappingURL=Header.css.map */
