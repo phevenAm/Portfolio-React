@@ -6,7 +6,7 @@ console.log(profile);
 const Home = () => {
   return (
     <div className="home container">
-      <Header />
+      <Header className="nav" />
       <div className="home_block clrblock">
         <h1 className="home__header">Stephen Missah</h1>
         <div className="profile">

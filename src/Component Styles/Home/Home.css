@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
   font-family: serif;
-  height: 100vh;
+  height: 100vh !important;
   --clr-black: rgb(27, 27, 27);
   --clr-white: whitesmoke;
   --clr-red: rgb(212, 88, 88);
@@ -18,10 +18,10 @@ html {
 }
 
 body {
+  height: 100vh !important;
   user-select: none;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .container {
@@ -69,7 +69,10 @@ body {
   position: relative;
   background: var(--clr-white);
   height: 50vh;
-  width: 400px;
+  min-height: 200px;
+  width: 50vw;
+  max-width: 400px;
+  min-width: 200px;
   object-fit: contain;
   left: -100px;
   border-radius: 25px;
@@ -92,5 +95,64 @@ body {
   color: var(--clr-white);
   right: -16rem;
   bottom: 13rem;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background: red;
+  }
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .home .nav {
+    display: none;
+  }
+  .home .home__header {
+    font-size: 4.5rem;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: var(--clr-black);
+    top: 1.5rem;
+  }
+  .home .home_block {
+    background: rgba(250, 250, 250, 0.26);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.24);
+    position: absolute;
+    border-radius: 25px;
+    width: 100% !important;
+  }
+  .home .home_block .profile .profile__image {
+    position: relative;
+    background: var(--clr-white);
+    margin-left: 2rem;
+    height: 200px;
+    width: 200px;
+    min-width: 200px;
+    object-fit: contain;
+    left: 0px;
+    top: 5rem;
+    border-radius: 25px;
+  }
+  .home .profile__subtitle {
+    font-size: 1.6rem;
+    position: absolute;
+    transform: rotate(0) !important;
+    color: var(--clr-white);
+    right: 0 !important;
+    bottom: -5rem !important;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 380px) {
+  body {
+    background: blue;
+  }
 }
 /*# sourceMappingURL=Home.css.map */
