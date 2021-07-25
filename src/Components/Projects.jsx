@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ProjectSlider from "./ProjectSlider";
 import { BsArrowBarLeft } from "react-icons/bs";
 import "../Component Styles/Projects/ProjectsPage.css";
+import ProjectStack from "./ProjectStack";
 
 const Projects = () => {
 
@@ -35,7 +36,7 @@ const Projects = () => {
         <BsArrowBarLeft className="projects__backButton" />
       </Link>
       
-      {windowDimensions.width > 1000 ? <ProjectSlider /> : <h1>place projects stack here</h1>}
+      {windowDimensions.width > 1000 ? <ProjectSlider /> : <ProjectStack />}
       {console.log(windowDimensions)}
       {/* //! if screen width = mobile show stack else render this component above */}
     </div>
