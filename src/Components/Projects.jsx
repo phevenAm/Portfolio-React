@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import ProjectSlider from "./ProjectSlider";
 import { BsArrowBarLeft } from "react-icons/bs";
-import "../Component Styles/Projects/ProjectsPage.css";
+import '../css/ProjectsPage.css';
 import ProjectStack from "./ProjectStack";
 
 const Projects = () => {

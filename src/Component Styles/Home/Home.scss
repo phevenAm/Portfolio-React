@@ -4,7 +4,7 @@
   //!using universal background on body
   // background-image: url("https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
   // background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background: rgb(209, 51, 51);
+  // background: rgb(209, 51, 51);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -78,7 +78,10 @@
 
 @media (max-width: 1000px) {
   body {
-    background: red;
+    // background: red;
+    background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .home {

@@ -9,10 +9,12 @@
 
 }
 
+
+
 html {
   font-size: 62.5%;
   font-family: serif;
-  height: 100vh !important;
+  // height: 100vh !important;
 
   --clr-black: rgb(27, 27, 27);
   --clr-white: whitesmoke;
@@ -21,9 +23,10 @@ html {
 }
 
 body {
-  height: 100vh !important;
+  height: 100% !important;
+  // min-height: fit-content;
   user-select: none;
-  background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  // background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -59,7 +62,7 @@ $paddingXXLarge: 5rem;
 
 //!Mixins
 @mixin frost {
-  background: rgba(250, 250, 250, 0.26);
+  background: rgba(250, 250, 250, 0.472);
   backdrop-filter: blur(8px);
   box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.24);
 }

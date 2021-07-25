@@ -1,4 +1,7 @@
+@import '../mainStyles';
+
 .card {
+    @include frost;
     max-width: 30vw;
     margin: 10px;
     margin-bottom: 50px;
