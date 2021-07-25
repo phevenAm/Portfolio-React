@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Card from './Card';
 import ProjectDetails from "../data/projects-data.json";
+import '../css/PStack.css';
 const ProjectStack = () => {
     // console.log(ProjectDetails);
  return (

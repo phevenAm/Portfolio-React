@@ -3,7 +3,7 @@ import '../css/Card.css';
 
 const Card = (project, key) => {
     // const [card, setCard] = useState([]);
-    const {description, images ={}, skills, title} = project;
+    const {description, images = {}, skills, title} = project;
     console.log(images);
     return (
     <React.Fragment>

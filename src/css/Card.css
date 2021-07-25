@@ -1,2 +1,2 @@
-.card{max-width:40vw;margin-bottom:50px;background-color:white;padding:3rem 2rem}.card .card-hero{height:200px;background-size:cover;display:grid;place-items:center}
+.card{max-width:30vw;margin:10px;margin-bottom:50px;background-color:white;height:400px;border-radius:25px}.card .card-hero{height:200px;width:100%;background-size:cover;display:grid;place-items:center;border-top-left-radius:25px;border-top-right-radius:25px;background-position:center}.card .card-body{margin:3rem 2rem}
 /*# sourceMappingURL=Card.css.map */
