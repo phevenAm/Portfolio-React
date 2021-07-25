@@ -1,11 +1,28 @@
-import React from 'react'
-
+import React, {useEffect, useState} from 'react'
+import Card from './Card';
+import ProjectDetails from "../data/projects-data.json";
 const ProjectStack = () => {
-    return (
-        <div>
-            <h2>Hi, I'm the project stack component!</h2>
-        </div>
-    )
+    // console.log(ProjectDetails);
+ return (
+  <React.Fragment>
+      <div className="stackContainer">
+        {  ProjectDetails.map((project, index) => {
+            const {
+            id,
+            title,
+            description,
+            images,
+            skills 
+            } = project;
+    
+            return (
+                <Card key={index} project={project} id={id} description={description} title={title} images={images}/>
+            )
+          })}
+      </div>
+  </React.Fragment>
+ )
+
 }
 
 export default ProjectStack

@@ -1,11 +1,10 @@
-@import '../src/Component\ Styles/_mainStyles'
+@import '../src/Component\ Styles/_mainStyles';
+@import '../src/Component\ Styles/_mixins';
 
-// .app {
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: right;
-//   justify-content: right;
-//   color: white;
-//   background-color: blue;
-// }
+
+
+.appContainer {
+    display: grid;
+    place-items: center;
+    background: purple !important;
+}

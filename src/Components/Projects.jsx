@@ -7,6 +7,8 @@ import ProjectStack from "./ProjectStack";
 
 const Projects = () => {
 
+
+  //!detect screen size change and change project display style
   function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -14,7 +16,6 @@ const Projects = () => {
     height
   };
 }
-
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 

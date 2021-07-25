@@ -12,7 +12,7 @@ const Home = () => {
         <div className="profile">
           <div className="profile__image">
             <img
-              src="https://mir-s3-cdn-cf.behance.net/user/276/a051c49504011.59628bcd48106.jpg"
+              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               alt="profile"
               className="profile__imageImg"
             />

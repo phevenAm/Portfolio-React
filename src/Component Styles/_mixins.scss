@@ -1,0 +1,296 @@
+// @file
+// Custom sass mixins
+//
+// Define the custom mixins for your project here.
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
+
+// shorthand bp (breakpoint) media queries
+@mixin bp($point) {
+
+    // "less than XS" mobile only (saves having to zero out properties on larger breakpoints)
+    @if $point==lt-xs {
+        @media only screen and (max-width: $screen-xs - 1px) {
+            @content;
+        }
+    }
+
+    @else if $point==lt-s {
+        @media only screen and (max-width: $screen-sm - 1px) {
+            @content;
+        }
+    }
+
+    @else if $point==lt-m {
+        @media only screen and (max-width: $screen-md - 1px) {
+            @content;
+        }
+    }
+
+    @else if $point==lt-l {
+        @media only screen and (max-width: $screen-lg - 1px) {
+            @content;
+        }
+    }
+
+    // Extra small devices (smart-phones from 480px)
+    @else if $point==xs {
+        @media only screen and (min-width: $screen-xs) {
+            @content;
+        }
+    }
+
+    // Small devices (tablets, 768px and up)
+    @else if $point==s {
+        @media only screen and (min-width: $screen-sm) {
+            @content;
+        }
+    }
+
+    @else if $point==s-m {
+        @media only screen and (min-width: $screen-sm) and (max-width: $screen-md) {
+            @content;
+        }
+    }
+
+    // Medium devices (desktops, 992px and up)
+    @else if $point==m {
+        @media only screen and (min-width: $screen-md) {
+            @content;
+        }
+    }
+
+    // Medium to Large only
+    @else if $point==m-l {
+        @media only screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+            @content;
+        }
+    }
+
+    // Large devices (large desktops, 1200px and up)
+    @else if $point==l {
+        @media only screen and (min-width: $screen-lg) {
+            @content;
+        }
+    }
+
+    // Large devices (large desktops, 1500px and up)
+    @else if $point==xl {
+        @media only screen and (min-width: $screen-xl) {
+            @content;
+        }
+    }
+
+    @else if $point==landscape {
+        @media only screen and (orientation:landscape) {
+            @content;
+        }
+    }
+
+    @else if $point==portrait {
+        @media only screen and (orientation:portrait) {
+            @content;
+        }
+    }
+
+    @else {
+        @media only screen and (min-width: $point) {
+            @content;
+        }
+    }
+}
+
+// mixin to attach SVG and fallback image via CSS background. Great if you don't need to alter the SVG with CSS
+@mixin svg($svg, $fallback, $position: 0 0, $color: transparent, $repeat: no-repeat) {
+    background: url(#{$fallback}) $color $position $repeat;
+    background: none,
+    url(#{$svg}) $color $position $repeat;
+}
+
+@mixin opacity($value) {
+    $IEValue: $value * 100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+    filter: alpha(opacity=$IEValue);
+    -khtml-opacity: $value;
+    -webkit-opacity: $value;
+    -moz-opacity: $value;
+    opacity: $value;
+}
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+    @include element-invisible;
+
+    &:active,
+    &:focus {
+        @include element-invisible-off;
+    }
+}
+
+// Helper mixin. Quicker outlines when debugging.
+@mixin outline($line-color: red, $line-style:dashed, $line-thickness:1px) {
+    outline: $line-thickness $line-style $line-color;
+}
+
+//cancel gradient
+@mixin nogradient() {
+    background: 0;
+    filter: none;
+}
+
+// vertical gradient
+@mixin gradient($from, $fromX, $to, $toX, $image: none) {
+    background: $from;
+    background-image: $image;
+    background: $image, -moz-linear-gradient(top, $from $fromX, $to $toX);
+    background: $image, -webkit-gradient(linear, left top, left bottom, color-stop($fromX, $from), color-stop($toX, $to));
+    background: $image, -webkit-linear-gradient(top, $from $fromX, $to $toX);
+    background: $image, -o-linear-gradient(top, $from $fromX, $to $toX);
+    background: $image, -ms-linear-gradient(top, $from $fromX, $to $toX);
+    background: $image, linear-gradient(to bottom, $from $fromX, $to $toX);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}', GradientType=0);
+}
+
+// horizontal gradient
+@mixin hgradient($from, $fromX, $to, $toX, $image: none) {
+    background: $from;
+    background-image: $image;
+    background: $image, -moz-linear-gradient(left, $from $fromX, $to $toX);
+    background: $image, -webkit-gradient(linear, left top, right top, color-stop($fromX, $from), color-stop($toX, $to));
+    background: $image, -webkit-linear-gradient(left, $from $fromX, $to $toX);
+    background: $image, -o-linear-gradient(left, $from $fromX, $to $toX);
+    background: $image, -ms-linear-gradient(left, $from $fromX, $to $toX);
+    background: $image, linear-gradient(to right, $from $fromX, $to $toX);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}', GradientType=1);
+}
+
+// @mixin animation($animation){
+//     @-webkit-keyframes $animation {
+//         @content;
+//     }
+//     @-moz-keyframes $animation {
+//         @content;
+//     }
+//     @-o-keyframes $animation {
+//         @content;
+//     }
+//     @keyframes $animation {
+//         @content;
+//     }
+// }
+
+@mixin clear() {
+
+    &:before,
+    &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin reponsive-youtube {
+    // Note: apply to parent (wrapper) div.  
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@mixin verticallyCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+// Calc image intrinsic aspect ratio
+@function get-img-aspect-ratio($img-url) {
+    $img-height: image-height("#{$img-url}");
+    $img-width: image-width("#{$img-url}");
+    $aspect-ratio: $img-height / $img-width;
+
+    @return $aspect-ratio;
+}
+
+@mixin intrinsic-ratio-bg-img($img-url, $datauri: false) {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: percentage(get-img-aspect-ratio($img-url)); // NOTE: img's intrinsic aspect ratio
+    height: 0px !important;
+    display: block;
+
+    @if $datauri {
+        @include set-bg-img("#{$img-url}");
+    }
+
+    @else {
+        background-image: image-url("#{$img-url}");
+    }
+}
+
+
+
+@mixin scrollBar {
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}

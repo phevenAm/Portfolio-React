@@ -1,0 +1,16 @@
+.card {
+    max-width: 40vw;
+    margin-bottom: 50px;
+    background-color: white;
+
+    padding: 3rem 2rem;
+
+    .card-hero {
+        height: 200px;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+    }
+
+
+}
