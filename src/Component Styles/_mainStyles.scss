@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import './mixins';
 
 * {
   padding: 0;
@@ -22,13 +23,17 @@ html {
   --clr-grey: rgb(139, 138, 138);
 }
 
-body {
-  height: 100% !important;
-  // min-height: fit-content;
-  user-select: none;
-  // background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-repeat: no-repeat;
+
+//*Universal wallpaper/background
+#root {
+  position: relative;
+  // background: url("https://images.unsplash.com/photo-1512205908084-f43bea685ff1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+  background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // user-select: none;
+  min-height: 100vh;
 }
 
 //!Animation
@@ -93,15 +98,6 @@ $paddingXXLarge: 5rem;
   }
 }
 
-//radii
-
-$radiusNormal: 25px;
-$radiusSmall: 12.5px;
-
-//shadow
-
-$shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
-
 @mixin linkHoverAnimation {
   &::before {
     content: "";
@@ -120,3 +116,12 @@ $shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
     height: 20px;
   }
 }
+
+//radii
+
+$radiusNormal: 25px;
+$radiusSmall: 12.5px;
+
+//shadow
+
+$shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);

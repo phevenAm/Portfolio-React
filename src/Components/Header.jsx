@@ -3,7 +3,7 @@ import Rodal from "rodal";
 import { BiGitBranch, BiPhone } from "react-icons/bi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
-import "../Component Styles/Header/Header.css";
+import "../css/Header.css";
 import "rodal/lib/rodal.css";
 const Header = () => {
   const [modalState, setModalState] = useState(false);
