@@ -6,6 +6,7 @@
 
   flex-direction: column;
   font-family: "Oswald", sans-serif;
+  z-index: 4;
 
   .nav {
     flex: 0.3;
@@ -19,11 +20,13 @@
     li {
       margin-bottom: 30px;
       position: relative;
-      // transition: width $aniSpeed;
+      // *{
+      //   color: pink !important;
+      // }
     }
 
     .link {
-      color: black;
+      color: var(--clr-white);
       font-size: 4.2em;
       position: relative;
       cursor: pointer;
