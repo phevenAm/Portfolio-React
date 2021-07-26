@@ -10,6 +10,17 @@ const Home = () => {
       <div className="profile_block clrblock">
         <div className="profile__header">
           <h1 className="profile__headerName">Stephen Missah</h1>
+
+          <div className="profile__headerKeyPoints">
+            <div className="quote"><p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem ex a praesentium enim deleniti minus sunt ea nihil nulla?</p></div>
+            <ul>
+              <li>Key point</li>
+              <li>Key point</li>
+              <li>Key point</li>
+              <li>Key point</li>
+            </ul>
+          </div>
         </div>
          <div className="profile__imageContainer">
               <div className="profile__image">
@@ -17,9 +28,9 @@ const Home = () => {
                 src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 alt="profile"
               />
-              <h5 className="profile__subtitle">
+              <h3 className="profile__subtitle">
                 Product Designer, turned Developer
-              </h5>
+              </h3>
           </div>
          </div>
         <div className="profile__text">
