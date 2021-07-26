@@ -24,7 +24,7 @@ const Header = () => {
             Projects
           </NavLink>
         </li>
-        <li>
+        <li className="link">
           <div className="link" onClick={toggleState}>
             Contact
             <Rodal visible={modalState} onClose={toggleState} {...props}>

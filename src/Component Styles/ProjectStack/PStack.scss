@@ -1,9 +1,58 @@
+@import '../mainStyles';
+
 .stackContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+
     // height: 100%;
+    padding: 5rem 1rem;
+
+    .card {
+
+
+
+        width: 100%;
+        max-width: 350px !important;
+        margin: 5rem 2.5rem;
+        min-width: 280px;
+
+        @include bp(xs) {
+            width: 100%;
+            min-width: 280px !important;
+            margin: 5rem 2.5rem;
+
+        }
+
+        .card-hero {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                background: rgba(90, 90, 90, 0.733);
+                // @include frost;
+                height: 100%;
+                border-radius: inherit;
+            }
+
+            .card-title {
+                position: absolute;
+                z-index: 3;
+                font-size: 3rem;
+                color: var(--clr-white);
+            }
+        }
+
+        .card-body-info {
+            // font-size: 1.6rem;
+        }
+
+        // @include bp(s) {}
+
+
+    }
 }

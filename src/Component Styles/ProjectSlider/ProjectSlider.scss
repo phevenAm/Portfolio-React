@@ -5,13 +5,18 @@
   width: 80rem;
   display: flex;
   position: relative;
-  border-radius: $radiusNormal;
-  @include frost;
   margin: $marginSmall;
   min-height: 50vh !important;
   cursor: pointer;
 
+  // margin-top: 50vh !important;
+  // padding-bottom: auto !important;
+  // transform: translateY(-50%) !important;
+
+
   .project__slideElementContent {
+    border-radius: $radiusNormal;
+    @include frost;
     display: flex;
     padding: $paddingXLarge;
     flex-direction: row;
@@ -37,7 +42,6 @@
       justify-content: space-evenly;
       margin-left: $marginLarge;
       position: relative;
-
       height: 100%;
     }
 
@@ -45,9 +49,16 @@
       position: relative;
       top: 25%;
       font-size: 5.5rem;
-      color: var(--clr-white);
+      color: var(--clr-black) !important;
       margin-bottom: $marginXLarge;
+
+      @include bp(m) {
+        width: 100%;
+        max-width: 225px;
+      }
+
       @include linkHoverAnimation;
+
     }
 
     p {
@@ -55,8 +66,32 @@
       color: var(--clr-black);
     }
   }
+}
 
-  .swiper-container {
-    height: 920px !important;
+div.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal {
+  height: 100vh !important;
+  // background: red !important;
+  padding-top: 100px;
+
+
+
+  div.swiper-pagination.swiper-pagination-bullets {
+    transform: translateY(-100px);
+    transition: all 0.5s ease-in-out;
+
   }
+
+  div.swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet {
+    background: white;
+    opacity: .7;
+
+  }
+
+  div.swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet-active {
+    background: var(--clr-red);
+    opacity: .7;
+    width: 12px;
+    height: 12px;
+  }
+
 }

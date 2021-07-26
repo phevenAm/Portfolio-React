@@ -1,15 +1,28 @@
 @import "../mainStyles";
 
 
-.projects {}
+.projects {
+  min-height: 100vh;
+  // display: flex;
+  // justify-content: center;
+  // place-items: center;
+  // flex-direction: column;
+}
 
 .projects__backButton {
   position: absolute;
-  font-size: 5.5rem;
-  top: 50%;
+  font-size: 4.5rem;
+  top: 50px;
   transform: translateY(-50%);
   left: 2rem;
   color: white;
+  z-index: 300;
+
+  @include bp(m) {
+    top: 7vh;
+    // mix-blend-mode: color-dodge;
+    mix-blend-mode: exclusion;
+  }
 
   &:hover {
     color: var(--clr-red);

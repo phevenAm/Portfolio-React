@@ -10,7 +10,13 @@
 
 }
 
-
+body {
+  //TODO: website still gets smaller for some reason
+  position: relative;
+  min-width: 300px !important;
+  width: 100%;
+  width: auto !important;
+}
 
 html {
   font-size: 62.5%;
@@ -19,21 +25,26 @@ html {
   --clr-white: whitesmoke;
   --clr-red: rgb(212, 88, 88);
   --clr-grey: rgb(139, 138, 138);
+
 }
 
 
 //*Universal wallpaper/background
 #root {
-  position: relative;
-  background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 
+
+  @include bp(m) {
+    // background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+    background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+
+  position: relative;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  // opacity: .3;
-  // user-select: none;
+  background-repeat: no-repeat !important;
   min-height: 100vh;
-  // z-index: -300;
 }
 
 //!Animation
@@ -43,10 +54,14 @@ $aniSpeed: 250s ease-in-out;
 
 .container {
   padding: 1.5rem 5.5rem;
+
+  width: 100%;
+  min-height: 100vh;
 }
 
 //!font size
 $fontHeading: 4.5rem;
+$fontHeadingSmall: 3.5rem;
 $fontNormal: 1.6rem;
 
 //!margin
@@ -67,7 +82,7 @@ $paddingXXLarge: 5rem;
 
 //!Mixins
 @mixin frost {
-  background: rgba(250, 250, 250, 0.472);
+  background: rgba(250, 250, 250, 0.623);
   backdrop-filter: blur(8px);
   box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.24);
 }
@@ -103,7 +118,7 @@ $paddingXXLarge: 5rem;
     content: "";
     background: var(--clr-red);
     width: 0;
-    height: 20px;
+    height: 15px;
     bottom: 0;
     display: block;
     transition: all 0.5s ease-in-out;
@@ -112,8 +127,8 @@ $paddingXXLarge: 5rem;
   }
 
   &:hover::before {
-    width: 80%;
-    height: 20px;
+    width: 100%;
+    height: 15px;
   }
 }
 
@@ -151,4 +166,11 @@ $shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+}
+
+
+p {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
 }

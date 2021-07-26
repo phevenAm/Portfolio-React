@@ -5,6 +5,7 @@ import ProjectDetails from "../data/projects-data.json";
 import "swiper/css/swiper.css";
 import Swiper from "react-id-swiper";
 //customs css
+import '../css/ProjectSlider.css';
 
 import "../Component Styles/ProjectSlider/ProjectSlider.css";
 
