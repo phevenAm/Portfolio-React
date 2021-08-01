@@ -10,13 +10,13 @@
 
 }
 
-body {
-  //TODO: website still gets smaller for some reason
-  position: relative;
-  min-width: 300px !important;
-  width: 100%;
-  width: auto !important;
-}
+// body {
+//   //TODO: website still gets smaller for some reason
+//   position: relative;
+//   min-width: 300px !important;
+//   width: 100%;
+//   width: auto !important;
+// }
 
 html {
   font-size: 62.5%;
@@ -30,22 +30,22 @@ html {
 
 
 //*Universal wallpaper/background
-#root {
-  background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+// #root {
+//   background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 
 
-  @include bp(m) {
-    // background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+//   @include bp(m) {
+//     // background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 
-    background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  }
+//     background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+//   }
 
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat !important;
-  min-height: 100vh;
-}
+//   position: relative;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat !important;
+//   min-height: 100vh;
+// }
 
 //!Animation
 $aniSpeed: 250s ease-in-out;
