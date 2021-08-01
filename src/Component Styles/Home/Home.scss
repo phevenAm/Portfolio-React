@@ -3,12 +3,43 @@
 
 .home {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-top: auto !important;
-  margin-bottom: auto !important;
+  justify-content: space-evenly;
+  flex: 1;
+  max-width: 1750px;
+
+  margin: auto;
+
+  @include bp(s) {
+    flex-direction: row;
+  }
+
 }
+
+.block {
+  // margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.left-block {
+    display: flex;
+    flex: .2;
+    background-color: red;
+    height: auto;
+    width: 100%;
+  }
+
+  &.right-block {
+    display: flex;
+    flex: .8;
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 
 .profile_block {
   @include frost;

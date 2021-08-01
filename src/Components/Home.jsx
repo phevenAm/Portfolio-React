@@ -6,8 +6,11 @@ console.log(profile);
 const Home = () => {
   return (
     <div className="home container">
-      <Header className="nav" />
-      <div className="profile_block clrblock">
+     <div className="left-block block">
+        <Header className="nav" />
+     </div>
+      <div className="right-block block">
+        <div className="profile_block clrblock">
         <div className="profile__header">
           <h1 className="profile__headerName">Stephen Missah</h1>
 
@@ -41,6 +44,7 @@ const Home = () => {
           </p>
         </div>
         </div>
+      </div>
       </div>
   );
 };

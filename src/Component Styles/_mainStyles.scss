@@ -53,7 +53,12 @@ $aniSpeed: 250s ease-in-out;
 //!container
 
 .container {
-  padding: 1.5rem 5.5rem;
+
+  padding: 0.5rem 0.5rem;
+
+  @include bp(l) {
+    padding: 1.5rem 5.5rem;
+  }
 
   width: 100%;
   min-height: 100vh;
