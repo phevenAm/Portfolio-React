@@ -32,28 +32,12 @@
       user-select: none;
       mix-blend-mode: exclusion;
       // @include linkHoverAnimation;
+      font-size: 2.5rem;
 
       div & {
         // background: gold !important;
-        height: 44px;
-      }
-
-
-
-      &:before {
-        content: "";
-        width: 0;
-        background: var(--clr-red);
-        height: 15px;
-        position: absolute;
-        transition: width .5s ease-in-out;
-        z-index: -4;
-        bottom: 0;
-        // transform: translateY(-50%);
-      }
-
-      &:hover::before {
-        width: 100%;
+        max-height: 40px !important;
+        padding: 0 !important;
       }
 
       &:visited {
@@ -85,20 +69,30 @@
       li {
         margin-bottom: 30px;
         position: relative;
+      }
 
+      .link {
+        color: var(--clr-white);
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        font-size: 3.5rem;
+        // @include linkHoverAnimation;
 
-        .link {
-          color: var(--clr-white);
-          font-size: 4.2em;
-          position: relative;
-          cursor: pointer;
-          user-select: none;
+        &:before {
+          content: "";
+          width: 0;
+          background: var(--clr-red);
+          height: 15px;
+          position: absolute;
+          transition: width .5s ease-in-out;
+          z-index: -4;
+          bottom: 0;
+          // transform: translateY(-50%);
+        }
 
-          @include linkHoverAnimation;
-
-          &:visited {
-            color: var(--clr-white);
-          }
+        &:hover::before {
+          width: 100%;
         }
       }
     }
