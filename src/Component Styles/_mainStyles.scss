@@ -10,13 +10,14 @@
 
 }
 
-// body {
-//   //TODO: website still gets smaller for some reason
-//   position: relative;
-//   min-width: 300px !important;
-//   width: 100%;
-//   width: auto !important;
-// }
+body {
+  background-image: url('https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  // background-repeat: no-repeat !important;
+  min-height: 100vh;
+}
 
 html {
   font-size: 62.5%;
