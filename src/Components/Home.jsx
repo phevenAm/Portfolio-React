@@ -6,8 +6,11 @@ console.log(profile);
 const Home = () => {
   return (
     <div className="home container">
-      <Header className="nav" />
-      <div className="profile_block clrblock">
+    <div className="left-block block">
+        <Header className="nav" />
+    </div>
+      <div className="right-block block">
+        <div className="profile_block clrblock">
         <div className="profile__header">
           <h1 className="profile__headerName">Stephen Missah</h1>
 
@@ -22,10 +25,10 @@ const Home = () => {
             </ul>
           </div>
         </div>
-         <div className="profile__imageContainer">
+        <div className="profile__imageContainer">
               <div className="profile__image">
               <img
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 alt="profile"
               />
               <h3 className="profile__subtitle">
@@ -41,6 +44,7 @@ const Home = () => {
           </p>
         </div>
         </div>
+      </div>
       </div>
   );
 };

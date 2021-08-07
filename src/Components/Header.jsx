@@ -24,7 +24,7 @@ const Header = () => {
             Projects
           </NavLink>
         </li>
-        <li className="link">
+        <li>
           <div className="link" onClick={toggleState}>
             Contact
             <Rodal visible={modalState} onClose={toggleState} {...props}>
@@ -57,7 +57,8 @@ const Header = () => {
                 </span>
               </div>
             </Rodal>
-          </div>
+    
+        </div>
         </li>
       </div>
     </div>

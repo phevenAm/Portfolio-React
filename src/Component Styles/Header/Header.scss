@@ -5,7 +5,7 @@
   flex-direction: row;
   font-family: "Oswald", sans-serif;
   z-index: 4;
-  position: absolute;
+  position: relative;
   top: 35px;
 
   .nav {
@@ -18,24 +18,30 @@
       width: 100%;
       position: relative;
 
-      .contact-link {
-        max-width: 123px;
+      .contactLink {
+        max-width: inherit !important;
+        background: gold;
       }
 
-      .link {
+    }
+
+    .link {
+      color: var(--clr-white);
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+      mix-blend-mode: exclusion;
+      // @include linkHoverAnimation;
+      font-size: 2.5rem;
+
+      div & {
+        // background: gold !important;
+        max-height: 40px !important;
+        padding: 0 !important;
+      }
+
+      &:visited {
         color: var(--clr-white);
-        font-size: 2.5em;
-        position: relative;
-        cursor: pointer;
-        user-select: none;
-        mix-blend-mode: exclusion;
-        @include linkHoverAnimation;
-
-
-
-        &:visited {
-          color: var(--clr-white);
-        }
       }
     }
   }
@@ -63,20 +69,30 @@
       li {
         margin-bottom: 30px;
         position: relative;
+      }
 
+      .link {
+        color: var(--clr-white);
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        font-size: 3.5rem;
+        // @include linkHoverAnimation;
 
-        .link {
-          color: var(--clr-white);
-          font-size: 4.2em;
-          position: relative;
-          cursor: pointer;
-          user-select: none;
+        &:before {
+          content: "";
+          width: 0;
+          background: var(--clr-red);
+          height: 15px;
+          position: absolute;
+          transition: width .5s ease-in-out;
+          z-index: -4;
+          bottom: 0;
+          // transform: translateY(-50%);
+        }
 
-          @include linkHoverAnimation;
-
-          &:visited {
-            color: var(--clr-white);
-          }
+        &:hover::before {
+          width: 100%;
         }
       }
     }
@@ -85,6 +101,8 @@
 }
 
 .rodal {
+
+
   .rodal-dialog {
     @include frost;
     background: var(--clr-black);
@@ -93,14 +111,18 @@
 
     h3 {
       color: var(--clr-white);
-      margin-bottom: $marginSmall;
       font-size: 3rem;
+    }
+
+    &.rodal-door-enter {
+      width: 300px !important;
     }
 
     .rodal__info {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      margin-top: $marginLarge;
 
       span {
         display: flex;
