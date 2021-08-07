@@ -28,7 +28,7 @@ const Home = () => {
         <div className="profile__imageContainer">
               <div className="profile__image">
               <img
-                src="https://www.ragroup.co.uk/wp-content/uploads/2018/11/placeholder-profile-sq.jpg"
+                src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 alt="profile"
               />
               <h3 className="profile__subtitle">
