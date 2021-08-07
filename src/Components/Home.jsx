@@ -6,9 +6,9 @@ console.log(profile);
 const Home = () => {
   return (
     <div className="home container">
-     <div className="left-block block">
+    <div className="left-block block">
         <Header className="nav" />
-     </div>
+    </div>
       <div className="right-block block">
         <div className="profile_block clrblock">
         <div className="profile__header">
@@ -25,10 +25,10 @@ const Home = () => {
             </ul>
           </div>
         </div>
-         <div className="profile__imageContainer">
+        <div className="profile__imageContainer">
               <div className="profile__image">
               <img
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="https://www.ragroup.co.uk/wp-content/uploads/2018/11/placeholder-profile-sq.jpg"
                 alt="profile"
               />
               <h3 className="profile__subtitle">

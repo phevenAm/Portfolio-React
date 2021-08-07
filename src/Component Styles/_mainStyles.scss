@@ -10,15 +10,6 @@
 
 }
 
-body {
-  background-image: url('https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  // background-repeat: no-repeat !important;
-  min-height: 100vh;
-}
-
 html {
   font-size: 62.5%;
   font-family: serif;
@@ -28,25 +19,6 @@ html {
   --clr-grey: rgb(139, 138, 138);
 
 }
-
-
-//*Universal wallpaper/background
-// #root {
-//   background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-
-
-//   @include bp(m) {
-//     // background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-
-//     background: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//   }
-
-//   position: relative;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat !important;
-//   min-height: 100vh;
-// }
 
 //!Animation
 $aniSpeed: 250s ease-in-out;
