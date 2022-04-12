@@ -3,14 +3,10 @@
 
 body {
     background-image: url('https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    // position: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: repeat !important;
     min-height: 100vh;
-    overflow: hidden;
 
-    @include bp(lt-m) {
-        // background-: rotate(90deg);
-    }
+    @include bp(lt-m) {}
 }
