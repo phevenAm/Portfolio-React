@@ -25,18 +25,17 @@ const Home = () => {
             </ul>
           </div>
         </div>
-       <div className="profile__body">
-         
-            <div className="profile__image">
+        <div className="profile__imageContainer">
+              <div className="profile__image">
               <img
                 src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 alt="profile"
               />
-                <h3 className="profile__subtitle">
-                  Product Designer, turned Developer
-                </h3>
-            </div>
-         
+              <h3 className="profile__subtitle">
+                Product Designer, turned Developer
+              </h3>
+          </div>
+         </div>
         <div className="profile__text">
           <p> ipsum dolor sit amet consectetur adipisicing elit. Laudantium iure sunt quas quis magni quasi odio distinctio, exercitationem nihil impedit?
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quod dicta repudiandae voluptatem voluptates pariatur. 
@@ -44,7 +43,6 @@ const Home = () => {
           <p>  Quos facere dolorum consectetur blanditiis nobis porro architecto maiores omnis, nemo quae. Non, ipsam illo quia adipisci voluptate nihil minima maxime quis iusto unde vel consequatur inventore iste explicabo? Fugit, sit! Deleniti, vero soluta.
           </p>
         </div>
-       </div>
         </div>
       </div>
       </div>
