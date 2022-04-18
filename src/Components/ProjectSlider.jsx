@@ -9,7 +9,8 @@ import '../css/ProjectSlider.css';
 
 import "../Component Styles/ProjectSlider/ProjectSlider.css";
 
-const ProjectSlider = () => {
+const ProjectSlider = () =>
+{
   const params = {
     effect: "coverflow",
     grabCursor: true,
@@ -28,7 +29,8 @@ const ProjectSlider = () => {
   };
   return (
     <Swiper {...params}>
-      {ProjectDetails.map((project) => {
+      {ProjectDetails.map((project) =>
+      {
         const {
           id,
           title,

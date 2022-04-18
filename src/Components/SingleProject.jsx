@@ -3,11 +3,14 @@ import { BsArrowBarLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import projectsData from "../data/projects-data.json";
 import "../Component Styles/SingleProject/SingleProject.css";
-const SingleProject = ({ match }) => {
+const SingleProject = ({ match }) =>
+{
   const [singleProject, setSingleProject] = useState([]);
 
-  useEffect(() => {
-    const project = projectsData.filter((project) => {
+  useEffect(() =>
+  {
+    const project = projectsData.filter((project) =>
+    {
       return project.title === match.params.title;
     });
 
