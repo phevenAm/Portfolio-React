@@ -11,9 +11,6 @@
     padding: 5rem 1rem;
 
     .card {
-
-
-
         width: 100%;
         max-width: 350px !important;
         margin: 5rem 2.5rem;
@@ -49,6 +46,7 @@
 
         .card-body-info {
             // font-size: 1.6rem;
+            color: var(--clr-black) !important;
         }
 
         // @include bp(s) {}

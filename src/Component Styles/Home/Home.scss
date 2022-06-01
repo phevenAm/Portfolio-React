@@ -71,16 +71,20 @@
   }
 
   .profile__header {
-    width: 50%;
+    width: 100%;
     // background: var(--clr-red);
-    height: clamp(100px, 50%, 100%);
-    padding: 2.5rem;
-    position: relative;
-    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: white;
+
+    @include bp(s) {
+      width: 50%;
+      height: clamp(100px, 50%, 100%);
+      padding: 2.5rem;
+      position: relative;
+      min-height: 200px;
+    }
 
     h1 {
       font-size: $fontHeadingSmall;
@@ -152,14 +156,18 @@
 
     .profile__image {
       position: relative;
-      width: 100%;
-      height: clamp(150px, 100%, 350px);
 
       img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 70%;
+        height: auto;
+        border-radius: $radiusSmall;
+        display: none;
+
+        @include bp(s) {
+          display: block;
+          max-width: 300px;
+          width: 100%;
+        }
       }
 
       .profile__subtitle {
@@ -167,6 +175,10 @@
 
         h3 {
           font-size: 2rem;
+        }
+
+        @include bp(lt-s) {
+          display: none;
         }
       }
     }
@@ -200,7 +212,7 @@
           font-size: 2rem;
           position: absolute;
           transform: rotate(90deg);
-          color: var(--clr-black);
+          color: var(--clr-white);
           right: -17rem;
           bottom: 14.3rem;
         }

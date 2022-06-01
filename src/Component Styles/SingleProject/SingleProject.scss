@@ -1,15 +1,18 @@
 @import '../mainStyles';
-@import '../mainStyles';
 
 .project {
   width: 80vw;
   margin: auto;
-  height: fit-content;
   border-radius: $radiusNormal;
 
   object-fit: contain;
-  transform: translateY(15%);
+  margin-top: 100px;
   @include frost;
+  padding: $paddingLarge;
+
+  @include bp(m) {
+    margin-top: 50px;
+  }
 
   .project__hero {
     padding: $paddingLarge;
@@ -23,16 +26,15 @@
     margin-bottom: $marginXXLarge;
 
     h1 {
-      font-size: 1rem !important;
+      font-size: 3rem;
       position: absolute;
       z-index: 3;
-      // color: var(--clr-white);
-      color: pink !important;
+      color: var(--clr-white);
       user-select: none;
       text-transform: uppercase;
 
-      @include bp(m) {
-        font-size: 3rem;
+      @include bp(xs) {
+        font-size: 6rem;
       }
     }
 
@@ -48,7 +50,7 @@
 
   .project__images {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     img {
       border-radius: $radiusSmall;

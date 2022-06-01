@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { BsArrowBarLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import projectsData from "../data/projects-data.json";
-import "../Component Styles/SingleProject/SingleProject.css";
+// import "../Component Styles/SingleProject/SingleProject.css"; //!old path
+import '../css/SingleProject.css';
 const SingleProject = ({ match }) =>
 {
   const [singleProject, setSingleProject] = useState([]);
