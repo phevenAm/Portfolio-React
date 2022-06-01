@@ -29,7 +29,7 @@ const Home = () =>
           <div className="profile__imageContainer">
             <div className="profile__image">
               <img
-                src="../img/profile-2.jpg"
+                src="../../public/assets/images/Msc/IMG_7932.JPG"
                 alt="profile"
               // src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               // alt="profile"
