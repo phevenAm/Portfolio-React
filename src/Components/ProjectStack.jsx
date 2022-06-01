@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 import Card from './Card';
 import ProjectDetails from "../data/projects-data.json";
 import '../css/PStack.css';
@@ -19,7 +20,10 @@ const ProjectStack = () =>
                     } = project;
 
                     return (
-                        <Card key={index} project={project} id={id} description={description} title={title} images={images} />
+                        <Link to={`/Projects/Single_Project/${title}`}>
+                            <Card key={index} project={project} id={id} description={description} title={title} images={images} />
+                        </Link>
+                        // <Card key={index} project={project} id={id} description={description} title={title} images={images} />
                     )
                 })}
             </div>
