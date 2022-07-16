@@ -33,7 +33,7 @@ const Header = () => {
               <div className="rodal__info">
                 <span>
                   <a
-                    href="https://github.com/pheven"
+                    href="https://github.com/phevenAm"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -52,7 +52,7 @@ const Header = () => {
                   </a>
                 </span>
                 <span>
-                  <a href="tel:+447790006473">
+                  <a href="tel:+0779000xxxx">
                     <BiPhone /> {""} Mobile
                   </a>
                 </span>

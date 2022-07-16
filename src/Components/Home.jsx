@@ -3,8 +3,7 @@ import profile from "../data/profile.json";
 import "../css/Home.css";
 import { Header } from "../Components";
 console.log(profile);
-const Home = () =>
-{
+const Home = () => {
   return (
     <div className="home container">
       <div className="left-block block">
@@ -29,9 +28,9 @@ const Home = () =>
           <div className="profile__imageContainer">
             <div className="profile__image">
               <img
-                src="../../public/assets/images/Msc/IMG_7932.JPG"
+                // src="../../public/assets/images/Msc/IMG_7932.JPG"
                 alt="profile"
-              // src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               // alt="profile"
               />
               <h3 className="profile__subtitle">
