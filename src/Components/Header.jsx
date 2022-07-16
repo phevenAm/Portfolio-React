@@ -16,6 +16,7 @@ const Header = () => {
     width: 280,
     height: 150,
   };
+
   return (
     <div className="header">
       <div className="nav">
@@ -32,7 +33,7 @@ const Header = () => {
               <div className="rodal__info">
                 <span>
                   <a
-                    href="https://github.com/smissah"
+                    href="https://github.com/phevenAm"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -51,14 +52,14 @@ const Header = () => {
                   </a>
                 </span>
                 <span>
-                  <a href="tel:+447790006473">
+                  <a href="tel:+0779000xxxx">
                     <BiPhone /> {""} Mobile
                   </a>
                 </span>
               </div>
             </Rodal>
-    
-        </div>
+
+          </div>
         </li>
       </div>
     </div>
