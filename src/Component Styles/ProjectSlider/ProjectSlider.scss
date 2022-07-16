@@ -1,104 +1,73 @@
-@import "../mainStyles";
+// @import "../mainStyles";
 
-.project__slide {
-  height: 65vh;
-  width: 80rem;
-  display: flex;
-  position: relative;
-  margin: $marginLarge;
-  min-height: 50vh !important;
-  cursor: pointer;
-
-
-  // margin-top: 50vh !important;
-  // padding-bottom: auto !important;
-  // transform: translateY(-50%) !important;
+// .project__slide {
+//   height: 65vh;
+//   width: 80rem;
+//   display: flex;
+//   position: relative;
+//   margin: $marginLarge;
+//   min-height: 50vh !important;
+//   cursor: pointer;
 
 
-  .project__slideElementContent {
-    border-radius: $radiusNormal;
-    @include frost;
-    display: flex;
-    padding: $paddingXLarge;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    z-index: 500;
-    width: 100%;
-    height: 100%;
-
-    img {
-      box-shadow: $shadow;
-      border-radius: $radiusSmall;
-      min-width: 50%;
-      max-width: 50% !important;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .project__slideElementContentText {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      margin-left: $marginLarge;
-      position: relative;
-      height: 100%;
-    }
-
-    h1 {
-      position: relative;
-      top: 25%;
-      font-size: 5.5rem;
-      color: var(--clr-black) !important;
-      margin-bottom: $marginXLarge;
-
-      @include bp(m) {
-        width: 100%;
-        max-width: 225px;
-      }
-
-      @include linkHoverAnimation;
-
-    }
-
-    p {
-      font-size: 1.6rem;
-      color: var(--clr-black);
-    }
-  }
-}
-
-div.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal {
-  // height: 100vh !important;
-  // background: red !important;
-  // transform: translateY(4%);
-  // padding-top: 100px;
+//   // margin-top: 50vh !important;
+//   // padding-bottom: auto !important;
+//   // transform: translateY(-50%) !important;
 
 
+//   .project__slideElementContent {
+//     border-radius: $radiusNormal;
+//     @include frost;
+//     display: flex;
+//     padding: $paddingXLarge;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//     position: absolute;
+//     z-index: 500;
+//     width: 100%;
+//     height: 100%;
 
+//     img {
+//       box-shadow: $shadow;
+//       border-radius: $radiusSmall;
+//       min-width: 50%;
+//       max-width: 50% !important;
+//       height: 100%;
+//       object-fit: cover;
+//     }
 
-  // div.swiper-pagination.swiper-pagination-bullets {
-  //   transform: translateY(-100px);
-  //   transition: all 0.5s ease-in-out;
+//     .project__slideElementContentText {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-evenly;
+//       margin-left: $marginLarge;
+//       position: relative;
+//       height: 100%;
+//     }
 
-  // }
+//     h1 {
+//       position: relative;
+//       top: 25%;
+//       font-size: 5.5rem;
+//       color: var(--clr-black) !important;
+//       margin-bottom: $marginXLarge;
 
-  div.swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet {
-    background: white;
-    opacity: .7;
+//       @include bp(m) {
+//         width: 100%;
+//         max-width: 225px;
+//       }
 
-  }
+//       @include linkHoverAnimation;
 
-  div.swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet-active {
-    background: var(--clr-red);
-    opacity: .7;
-    width: 12px;
-    height: 12px;
-  }
+//     }
 
-}
-
+//     p {
+//       font-size: 1.6rem;
+//       color: var(--clr-black);
+//     }
+//   }
+// }
 
 
 $padding: 25px;
@@ -117,6 +86,8 @@ $padding: 25px;
   border-radius: 50px;
   margin: auto;
   padding: 40px 20px;
+  min-height: 100vh;
+  ;
 }
 
 .btn-container {
@@ -127,11 +98,12 @@ $padding: 25px;
   align-self: center;
 
   .btn {
-    font-size: .8rem;
+    font-size: 20px;
     padding: unset;
     background: white !important;
     padding: 5px 10px;
     border: none;
+    cursor: pointer;
     margin: 0 10px;
   }
 }
@@ -159,6 +131,7 @@ $padding: 25px;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
+      height: auto !important;
 
       border-radius: 25px !important;
     }
@@ -167,10 +140,10 @@ $padding: 25px;
       position: absolute;
       top: 50%;
       left: 50%;
-      color: white;
+      color: rgb(57, 54, 54);
       transform: translate(-50%, -50%);
       font-size: 120px !important;
-      z-index: 2;
+      // z-index: 2;
     }
   }
 }
