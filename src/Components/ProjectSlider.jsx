@@ -5,7 +5,7 @@ import ProjectDetails from "../data/projects-data.json";
 
 const ProjectSlider = () => {
   return (
-    <section class="app">
+    <section class="app-slider">
       <div class="slider-container">
 
         {ProjectDetails.map((project) => {
