@@ -86,8 +86,9 @@ $padding: 25px;
   border-radius: 50px;
   margin: auto;
   padding: 40px 20px;
-  min-height: 100vh;
-  ;
+  gap: 30px;
+  margin-top: 10%;
+
 }
 
 .btn-container {
@@ -113,6 +114,8 @@ $padding: 25px;
   position: relative;
   min-height: 62vh;
   overflow: hidden;
+  border-radius: 25px !important;
+
 
   .slide {
     position: absolute;
@@ -132,8 +135,6 @@ $padding: 25px;
       margin-left: auto;
       margin-right: auto;
       height: auto !important;
-
-      border-radius: 25px !important;
     }
 
     h1 {
