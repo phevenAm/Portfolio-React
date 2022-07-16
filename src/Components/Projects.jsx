@@ -5,11 +5,9 @@ import { BsArrowBarLeft } from "react-icons/bs";
 import '../css/ProjectsPage.css';
 import ProjectStack from "./ProjectStack";
 
-const Projects = () =>
-{
+const Projects = () => {
   //!detect screen size change and change project display style
-  function getWindowDimensions()
-  {
+  function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
     return {
       width,
@@ -19,10 +17,8 @@ const Projects = () =>
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
-  useEffect(() =>
-  {
-    function handleResize()
-    {
+  useEffect(() => {
+    function handleResize() {
       setWindowDimensions(getWindowDimensions());
     }
 
