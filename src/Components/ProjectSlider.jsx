@@ -52,6 +52,7 @@ const ProjectSlider = () => {
     });
 
 
+
     nextBtn.addEventListener('click', () => {
       console.log('next clicked');
       slidePos++;
