@@ -3,13 +3,13 @@
 
 .projects {
   min-height: 100vh;
-  // display: flex;
-  // justify-content: center;
+  // display: grid;
   // place-items: center;
-  // // flex-direction: column;
-  // padding-bottom: 50px;
-  height: 100%;
-  // background-color: red;
+  padding-top: 5%;
+
+  @include bp(m) {
+    padding-top: 10%;
+  }
 }
 
 .projects__backButton {

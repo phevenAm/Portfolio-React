@@ -54,14 +54,14 @@ const ProjectSlider = () => {
 
 
     nextBtn.addEventListener('click', () => {
+      console.log('next clicked');
       slidePos++;
       carousel('next', slidePos);
     });
     prevBtn.addEventListener('click', () => {
+      console.log('prev licked');
       slidePos--;
       carousel('prev');
-      console.log('clicked');
-
     });
 
 
